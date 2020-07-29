@@ -18,7 +18,7 @@ keypoints:
 - "A variety of basemap can be added to QGIS through adding an XYZ Tile layer."
 ---
 
-# Familiarize yourself with QGIs
+## Familiarize yourself with QGIs
 
 **1.** The main area of QGIS is called the canvas. There are also panels and toolbars, a status bar and menu panels. 
 
@@ -38,11 +38,11 @@ and keyboard shortcuts as well.
 
 ![QGIS Toolbar](../fig/Figure8-QGIS-tool-bar.png)
 
-# Add data to QGIS
+## Add data to QGIS
 
 To start, we need to download the data first. There are two shapefiles: Grocery stores [Download](../data/GroceryStores_sp.zip), and Neighborhood boundary [Download](../data/Neighborhood_sp.zip), and a csv file: Apartments [Download](../data/Apartments.csv).
 
-## Add vector data 
+### Add vector data 
 
 **1.**  Left-click the "Layer" menu option, hover over "Add Layer," and left-click the "Add Vector Layer" option. 
 
@@ -58,7 +58,7 @@ To start, we need to download the data first. There are two shapefiles: Grocery 
 
 **4.**  After adding GroceryStores_sp.shp and Neighborhood_sp.shp, close the Data Source Manager|Vector window.
 
-## Add delimited file
+### Add delimited file
 
 QGIS can convert X Y Coordinates into locations on a map. Open Apartments.csv and you can see X_Coor and Y_Coor columns. These are geospatial information for these apartments. We can map X_Coor and Y_Coor as a point layer in QGIS.
 
@@ -76,7 +76,7 @@ QGIS can convert X Y Coordinates into locations on a map. Open Apartments.csv an
 ![Layout after adding layers](../fig/Figure14-Layout-after-adding-layers.png)
 
 
-# Add a basemap
+## Add a basemap
 
 QGIS provides access to a variety of online base maps. You can add these base maps by building [XYZ Tiles connections](https://www.spatialbias.com/2018/02/qgis-3.0-xyz-tile-layers/). Here we add Google Road/Streets as the base map for the project. 
 
@@ -93,7 +93,7 @@ QGIS provides access to a variety of online base maps. You can add these base ma
 ![Drag Google Streets to the Canvas](../fig/Figure17-Drag-Google-Streets-to-the-Canvas.png)
 
 
-# Add a plugin 
+## Add a plugin 
 
 As an open source software, QGIS have an active community constantly contributing to a variety of tools by developing QGIS plugins. We will use a MMQGIS plugin in this project. 
 
