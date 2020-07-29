@@ -101,9 +101,9 @@ The price is set arbitrarily. You can set different price thresholds to compare 
 
 To meet the criteria, we need to
 
-[`a. make 400 meters distance buffers centered at apartment`](##Creat walking distance buffers)
+[`a. make 400 meters distance buffers centered at apartment`](#Creat walking distance buffers)
 
-[`b. count the number of grocery stores with the buffers`](##Count points within buffers)
+[`b. count the number of grocery stores with the buffers`](#Count points within buffers)
 
 [`c. join the buffer's attribute to apartments layer`](#Join attribute layer)
 
@@ -116,7 +116,7 @@ To meet the criteria, we need to
 [`g. deselect all`](#Deselect the selected feature class)
 
 
-## Create walking distance buffers
+[## Create walking distance buffers](#Creat walking distance buffers)
 
 **1.**  Go to Menu bar and find MMQGIS (the plugin installed). Click Create Buffers.
 
@@ -145,7 +145,7 @@ Create buffers around Apartments layer
 Buffer in the layer panel
 {: .text-center}
 
-## Count points within buffers
+[## Count points within buffers](#Count points within buffers)
 
 **1.**  In the Menu bar, find Vector. Go to Analysis tool and Click Count Points in Polygon. 
 
