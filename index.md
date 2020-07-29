@@ -44,9 +44,9 @@ Please consult the [Data Science Center](https://www.library.ucla.edu/location/d
 >
 > | Dataset | Format | Date | Resource | Description |
 > | ---- | ------| ------ |  ---- |  ----|
-> | Grocery store [Download](../data/GroceryStore_sp.zip) | Shapefile | 2020-05 | [Los Angeles Open Data](https://data.lacity.org/A-Prosperous-City/Grocery-Stores/g986-7yf9) | The locations of grocery stores in Los Angeles County.|
-> | Neighborhood boundaries [Download](../data/Neighborhood_sp.zip) |  Shapefile | 2020-06 | [Los Angeles Open Data Geohub](http://geohub.lacity.org/datasets/la-times-neighborhood-boundaries?geometry=-118.621%2C34.033%2C-118.294%2C34.083) |The administrative boundaries of neighiborhood in Los Angeles County.|
-> | Apartment locations [Download](../data/Apartments.csv) | csv | 2020-06 |[Apartments.com](Apartments.com)| The apartments are within 20 mins distance from UCLA by public transit, and the rents are less than $1700/month.The data were webscrapped from [Apartments](Apartments.com) on Jun. 15th, 2020 | 
+> | Grocery store [Download](./data/GroceryStore_sp.zip) | Shapefile | 2020-05 | [Los Angeles Open Data](https://data.lacity.org/A-Prosperous-City/Grocery-Stores/g986-7yf9) | The locations of grocery stores in Los Angeles County.|
+> | Neighborhood boundaries [Download](./data/Neighborhood_sp.zip) |  Shapefile | 2020-06 | [Los Angeles Open Data Geohub](http://geohub.lacity.org/datasets/la-times-neighborhood-boundaries?geometry=-118.621%2C34.033%2C-118.294%2C34.083) |The administrative boundaries of neighiborhood in Los Angeles County.|
+> | Apartment locations [Download](./data/Apartments.csv) | csv | 2020-06 |[Apartments.com](Apartments.com)| The apartments are within 20 mins distance from UCLA by public transit, and the rents are less than $1700/month.The data were webscrapped from [Apartments](Apartments.com) on Jun. 15th, 2020 | 
 {: .callout} 
 
 
