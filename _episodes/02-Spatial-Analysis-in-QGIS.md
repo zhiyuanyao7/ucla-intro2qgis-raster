@@ -32,6 +32,7 @@ Different Projections [Source](https://www.google.com/url?sa=i&url=https%3A%2F%2
 The Apartments layer we mapped into QGIS canvas are locations represented by X and Y Coordinates (latitude and longitude on the Earth surface). To analyze the layer, we need to project the Apartments layer from latitude and longitude (unit in degrees) to a "flat paper" using a suitable method. We will project the Apartments layer into **NAD83(2011)/California Zone 5**. 
 
 **1.**   Go to Processing Toolbox and search for projection. If the Processing Toolbox does not show on the right panel of QGIS layout. Go to the Menu, Processing, and Click Toolbox. 
+
 **2.**   Select Reproject Layer. 
 
 ![Reproject lyaer](../fig/Figure19-Reproject-layer.png)
@@ -89,6 +90,8 @@ Save the scratch layer (b)
 Save the scratch layer (c)
 {: .text-center}
 
+## Spatial Analysis 
+
 To find out which places are suitable for the student, we set two criteria:
 
 * **there are at least 2 grocery stores within 400 meters of the buffer centered at the Apartments.**
@@ -98,13 +101,19 @@ The price is set arbitrarily. You can set different price thresholds to compare 
 
 To meet the criteria, we need to
 
-`a. make 400 meters distance buffers centered at apartment`
+[`a. make 400 meters distance buffers centered at apartment`](#Creat walking distance buffers)
 
-`b. count the number of grocery stores with the buffers`
+[`b. count the number of grocery stores with the buffers`](#Count points within buffers)
 
-`c. join the buffer's attribute to apartments layer`
+[`c. join the buffer's attribute to apartments layer`](#Join attribute layer)
 
-`d. select the targeted apartments`
+[`d. select the targeted apartments by attributes`](#Select feature class by attributes)
+
+[`e. export the targeted apartents`](#Export the selected feature class)
+
+[`f. invert selection/select the rest of apartments, and export the unselected`](#Invert selection)
+
+[`g. deselect all`](#Deselect the selected feature class)
 
 
 ## Create walking distance buffers
@@ -264,7 +273,7 @@ Select by expression (b)
 Save selected features (b)
 {: .text-center}
 
-## Invert Selection
+## Invert selection
 
 Saving the selected apartments, we Invert selections and export the apartments that are not selected. We need the unselected apartments for mapping later. 
 
