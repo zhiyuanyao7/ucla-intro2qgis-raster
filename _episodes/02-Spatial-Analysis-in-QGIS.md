@@ -133,7 +133,7 @@ Create buffers around Apartments layer
 
 ![Buffer in the layer panel](../fig/Figure32-Buffer-in-the-Layer-panel.png)
 
-BUffer the layer panel
+Buffer in the layer panel
 {: .text-center}
 
 ## Count points within buffers
