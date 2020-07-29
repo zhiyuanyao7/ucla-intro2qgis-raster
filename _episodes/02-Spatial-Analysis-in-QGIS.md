@@ -18,7 +18,7 @@ keypoints:
 - "The radius of created buffers is measured by Eucilidean distance."
 ---
 
-# Projection 
+## Projection 
 
 Before we do the spatial analysis to find the suitable apartments, we need to **project** the ***Aparments*** layer. The Apartment layer is converted from a csv and the locations are derived from X and Y coordinates. X and Y coordinates are longtitudes and latitudes which represent locations on a global. We need to project the locations onto a "a flat piece of paper" before we do the analysis.
 
@@ -66,7 +66,7 @@ Rename teh reprojected layer
 Rename the layer
 {: .text-center}
 
-# Save the reprojected layer
+## Save the reprojected layer
 
 **1.** Looking at the renamed layer: Apartments_sp, you can find there is a button (looks like a caterpillar). This button indicates the layer is a temporal layer and is not saved. To save this layer, click the "caterpillar" button, a Save Scratch Layer window pops up. 
 
@@ -92,23 +92,23 @@ Save the scratch layer (c)
 To find out which places are suitable for the student, we set two criteria:
 
 * **there are at least 2 grocery stores within 400 meters of the buffer centered at the Apartments.**
-* **Price is less than $1300. According to a study, a distance of 0.25 miles is often used as an accepted in U.S. research studies. We set 400 meters as the walking distance to make buffers around apartments. **
+* **Price is less than $1300. According to a study, a distance of 0.25 miles is often used as an accepted in U.S. research studies. We set 400 meters as the walking distance to make buffers around apartments.**
 
 The price is set arbitrarily. You can set different price thresholds to compare the different result.
 
 To meet the criteria, we need to
 
-`a. make 400 meters distance buffers centered at apartment
-b. count the number of grocery stores with the buffers
-c. join the buffer's attribute to apartments layer
-d. select the targeted apartments`
+`a. make 400 meters distance buffers centered at apartment`
+`b. count the number of grocery stores with the buffers`
+`c. join the buffer's attribute to apartments layer`
+`d. select the targeted apartments`
 
 
-# Create walking distance buffers
+## Create walking distance buffers
 
 **1.**  Go to Menu bar and find MMQGIS (the plugin installed). Click Create Buffers.
 
-![Create buffers](../fig/Figure30-Create buffers.png)
+![Create buffers](../fig/Figure30-Create-buffers.png)
 
 Create buffers 
 {: .text-center}
@@ -134,7 +134,7 @@ Create buffers around Apartments layer
 BUffer the layer panel
 {: .text-center}
 
-# Count points within buffers
+## Count points within buffers
 
 **1.**  In the Menu bar, find Vector. Go to Analysis tool and Click Count Points in Polygon. 
 
@@ -157,7 +157,7 @@ Count points in polygon (b)
 Save the GroceryCount layer
 {: .text-center}
 
-# Join attribute layer
+## Join attribute layer
 
 We counted the number of grocery stories with each buffer, and the information is stored in GroceryCount Layer. Let's check the attribute table, find the information (NUMPOINTS) and join the attribute table to Apartments_sp. 
 
@@ -220,7 +220,7 @@ Rename Joined Layer
 Save Apartments_GroceryCount
 {: .text-center}
 
-# Select feature class by attributes
+## Select feature class by attributes
 
 To select by attributes, we need to open attribute table and look at how many attributes the table has and which attribute we will analyze.
 
@@ -249,7 +249,7 @@ Select by expression (b)
 
 **5.**  You can see the selected features are highlighted in the Canvas. There are 2 apartments selected.
 
-# Export the selected feature class
+## Export the selected feature class
 
 **1.**  Right click the Apartments_GroceryCount. Choose Export and click Save Selected Features As.
 
@@ -262,7 +262,7 @@ Select by expression (b)
 Save selected features (b)
 {: .text-center}
 
-# Invert Selection
+## Invert Selection
 
 Saving the selected apartments, we Invert selections and export the apartments that are not selected. We need the unselected apartments for mapping later. 
 
@@ -285,7 +285,7 @@ Save selected features (c)
 Save selected features (d)
 {: .text-center}
 
-# Deselect the selected feature class
+## Deselect the selected feature class
 
 After exporting Apartment_Selected and Apartment_NotSelected, go to the Tool bar in QGIS and Click Delected Features from the Current Active Layer. This will deselect the selected features in Apartement_GroceryCount layer. 
 
