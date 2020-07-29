@@ -46,7 +46,8 @@ Layout of the new print layout
 Add elements to make a map
 {: .text-center}
 
-**5.**  * (1) Click Select/Move item button in the Toolbox bar
+**5.** 
+   * (1) Click Select/Move item button in the Toolbox bar
    * (2) select the title. 
    * (3) In the Properties panel, change the title as House Hunting Plan.
    * (4) Move blow and change the Font to fit the map. If there is no change after changing the properties
