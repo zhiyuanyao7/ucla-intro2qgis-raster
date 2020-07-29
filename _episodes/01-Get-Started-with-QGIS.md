@@ -57,7 +57,7 @@ To start, we need to download the data first. There are two shapefiles: Grocery 
 Add a vector layer
 {: .text-center}
 
-**2.**  In Data Source Manager|Vector window, click the button and navigate to the folder where the data is. Once select GroceryStores_sp.shp, click Add. 
+**2.**  In Data Source Manager window, click the button and navigate to the folder where the data is. Once select GroceryStores_sp.shp, click Add. 
 
 ![Add Grocery store layer](../fig/Figure10-Add-GroceryStores_sp-layer.png)
 
@@ -71,7 +71,7 @@ Add Grocery store layer
 Add Neighborhood layer
 {: .text-center}
 
-**4.**  After adding GroceryStores_sp.shp and Neighborhood_sp.shp, close the Data Source Manager|Vector window.
+**4.**  After adding GroceryStores_sp.shp and Neighborhood_sp.shp, close the Data Source Manager window.
 
 ### Add delimited file
 
