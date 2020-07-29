@@ -84,7 +84,12 @@ QGIS can convert X Y Coordinates into locations on a map. Open Apartments.csv an
 Add delimited file
 {: .text-center}
 
-**2.**  In the Data Source Manager|Vector window, 1) navigate to the Data folder and 2) choose Apartment.csv. 3) Make sure Geometry CRS is EPSG: 4326 - WGS84. 4) Click Add. Close the Data Source Manager|Vector window. Apartments should show in the Canvas. 
+**2.**  In the Data Source Manager window
+        (1) navigate to the Data folder
+        (2) choose Apartment.csv. 
+        (3) Make sure Geometry CRS is EPSG: 4326 - WGS84. 
+        (4) Click Add. 
+        Close the Data Source Managerwindow. Apartments should show in the Canvas. 
 
 ![Add Apartments layer](../fig/Figure13-Add-Apartments-layer.png)
 
