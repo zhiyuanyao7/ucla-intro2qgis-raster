@@ -131,7 +131,7 @@ Create buffers around Apartments layer
 
 **3.**  The buffer layer should show up in the Layer panel. 
 
-![Buffer in the layer panel](../fig/Figure32-Buffer-in-the-layer-panel.png)
+![Buffer in the layer panel](../fig/Figure32-Buffer-in-the-Layer-panel.png)
 
 BUffer the layer panel
 {: .text-center}
