@@ -14,7 +14,7 @@ keypoints:
 - "The basie elements for a maps are scale, legend, north arrow, title, and the content."
 - "You can save the map in three types: pdf, image, and SVG."
 ---
-# Create the print layout
+## Create the print layout
 
 Changing the properties of the layers, we are ready for making and exporting a map. 
 
@@ -90,7 +90,7 @@ Customize the legend (b)
 
 **9.**  Rearrange the positions of the elements (title, north arrow, scale, legend, and map) to make a nice map. 
 
-# Export as Pdf, image or SVG
+## Export as Pdf, image or SVG
 
 The map can be exported/saved as image (jpg, png, etc.), SVG (a format using for html file), and pdf. We save the map as an image (jpeg) for this project. 
  
@@ -99,7 +99,7 @@ The map can be exported/saved as image (jpg, png, etc.), SVG (a format using for
 Export the map
 {: .text-center}
 
-# Save the project
+## Save the project
 
 We did a simple spatial analysis and made the first map! Good job! Next step is saving the project. 
 
