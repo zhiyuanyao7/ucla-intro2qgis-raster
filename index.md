@@ -33,7 +33,7 @@ Please consult the [Data Science Center](https://www.library.ucla.edu/location/d
 > |**Study area** | Los Angeles County|
 > | **Introduction & Objectives** | This workshop applies some basic spatial analysis tools to find out the suitable apartments for students. The objectives of the workshops are being familiar with QGIS layout, being able to use basic spatial analysis tools (e.g. buffer), changing layers properties, and making maps.| 
 > |**Methodology**|1. Import csv file with X and Y Coordinates as a layer<br> 2. Add vector layers <br> 3. Project the layer into a proper projection<br> 4. Create buffers<br>5. Join attribute tables<br>6. Changes layers properties <br> 7. Create a print layout and make maps|
-> |**Expected results**| Maps are saved for revew. For this:<br>1. Learn to save map projects, and create, export, and save map print layouts.<br> 2. Add item contents (i.e. maps, text box, legend, north arrow, and scale bars) to compose a print layout, and modify item properties.|
+> |**Expected results**| Maps are saved for review. For this:<br>1. Learn to save map projects, and create, export, and save map print layouts.<br> 2. Add item contents (i.e. maps, text box, legend, north arrow, and scale bars) to compose a print layout, and modify item properties.|
 > |**Analysis & Discussion**|To find the suitable apartment for the students, we need to consider other factors, such as having a car or not, the definition of grocery stores, the network distance instead of Euclidean distance when creating buffers.|
 > |**Conclusion**|Thank you for attending the workshop. After reviewing the map, where do you think the best place for a student and why?|
 {: .checklist} 
