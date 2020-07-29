@@ -18,7 +18,7 @@ Next, we will change the layer properties:
 1. change the symbology
 2. label the map.
 
-# Symbology
+## Symbology
 
 **1.**  Right click Apartment_Selected and choose Properties. 
  
@@ -88,7 +88,7 @@ Change the single marker (b)
 Change the simple fill 
 {: .text-center}
 
-# Add labels
+## Add labels
 
 We want to label the selected apartments with the prices.
 
