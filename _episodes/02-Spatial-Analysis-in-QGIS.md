@@ -101,9 +101,9 @@ The price is set arbitrarily. You can set different price thresholds to compare 
 
 To meet the criteria, we need to
 
-[`a. make 400 meters distance buffers centered at apartment`](#Creat walking distance buffers)
+[`a. make 400 meters distance buffers centered at apartment`](##Creat walking distance buffers)
 
-[`b. count the number of grocery stores with the buffers`](#Count points within buffers)
+[`b. count the number of grocery stores with the buffers`](##Count points within buffers)
 
 [`c. join the buffer's attribute to apartments layer`](#Join attribute layer)
 
