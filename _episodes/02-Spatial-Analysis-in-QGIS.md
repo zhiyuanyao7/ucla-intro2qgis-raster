@@ -116,7 +116,7 @@ To meet the criteria, we need to
 [`g. deselect all`](#deselect-the-selected-feature-class)
 
 
-## [Create walking distance buffers](#creat-walking-distance-buffers)
+## Create walking distance buffers
 
 **1.**  Go to Menu bar and find MMQGIS (the plugin installed). Click Create Buffers.
 
