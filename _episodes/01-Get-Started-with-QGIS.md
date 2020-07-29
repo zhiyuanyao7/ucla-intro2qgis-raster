@@ -46,7 +46,7 @@ QGIS Toolbar
 
 ## Add data to QGIS
 
-To start, we need to download the data first. There are two shapefiles: Grocery stores [Download](./data/GroceryStore_sp.zip), and Neighborhood boundary [Download](./data/Neighborhood_sp.zip), and a csv file: Apartments [Download](./data/Apartments.csv).
+To start, we need to download the data first. There are two shapefiles: Grocery stores [Download](./data/GroceryStore_sp.zip), and Neighborhood boundary [Download](./data/Neighborhood_sp.zip), and a csv file: Apartments [Download](./data/Apartments.csv). The Apartments are thoes which are within 20 min buffer to UCLA by public transit and whose price are less than $1700/month. 
 
 ### Add vector data 
 
