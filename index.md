@@ -8,6 +8,11 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 ## Welcome to the QGIS workshop
 QGIS Quantum Geographic Information Systems (QGIS) is a user-friendly open source Geographic Information System (GIS) licensed under the GNU General Public License. This workshop exhibits a small portion of the many spatial analysis techniques QGIS offers to familiarize you with some of the basics, and to illustrate the fundamentals of GIS. In this workshop for beginners, we will locate apartments that are within 20 min distance by public transit, analyze the price of the apartments and count nearby grocery within a fixed buffer distance.
 
+## Pre Workshop Survey
+To get a better backgroud of the participantes and prepare for the workshop, we would like to get some information from you. 
+
+[Pre Workshop Survery](https://docs.google.com/forms/d/1w1wk3f1JLv0quOZwZc1vwXUtTS_-vw83VQlRz6948wQ/edit?usp=sharing)
+
 ## Additional resources
 Please consult the [Data Science Center](https://www.library.ucla.edu/location/data-science-center), contact us via email (datascience@library.ucla.edu) regarding Geographic Information Sciences (GIS), Geospatial analysis, Data publishing & Sharing, Data & Coding, Statistical analysis, and Carpentries and instruction request and inquiries. 
 
@@ -48,6 +53,11 @@ Please consult the [Data Science Center](https://www.library.ucla.edu/location/d
 > | Neighborhood boundaries [Download](./data/Neighborhood_sp.zip) |  Shapefile | 2020-06 | [Los Angeles Open Data Geohub](http://geohub.lacity.org/datasets/la-times-neighborhood-boundaries?geometry=-118.621%2C34.033%2C-118.294%2C34.083) |The administrative boundaries of neighiborhood in Los Angeles County.|
 > | Apartment locations [Download](./data/Apartments.csv) | csv | 2020-06 |[Apartments.com](Apartments.com)| The apartments are within 20 mins distance from UCLA by public transit, and the rents are less than $1700/month.The data were webscrapped from [Apartments](Apartments.com) on Jun. 15th, 2020 | 
 {: .callout} 
+
+## Post Workshop Survey
+Thank you for attending the workshop. You feedback is crucial to improve the workshop and help us provide a better service to a broader community. Thank you for you input! 
+
+[Post Workshop Survey](https://docs.google.com/forms/d/1dvC54QX5KJinK5jkqm-zMhS1p-HF_QVBMjFwZfasY1w/edit?usp=sharing)
 
 
 {% include links.md %}
