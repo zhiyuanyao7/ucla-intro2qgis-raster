@@ -99,6 +99,12 @@ We want to label the selected apartments with the prices.
 Open properties window (e)
 {: .text-center}
 
-**2.**  On the left panel, select Labels. On the right panel, from the top select Single Label. Select Price for Value. 
+**2.**  On the left panel, select Labels. On the right panel, from the top select Single Label. Select Price for Value.
+
+![Figure 64. Label price field](../fig/Figure64-Label-Price-field.png)
+
+Add Lables 
+{: .text-center}
+
 
 {% include links.md %}
