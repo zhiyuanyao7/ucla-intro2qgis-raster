@@ -1,7 +1,7 @@
-# House Hunting Plan
+# Introduction to QGIS - Raster Analysis
 
 ## Overview
-This is a workshop regarding Introduction to QGIS. The workshop helps learns be familiar with the layout of QGIS, be able to do simple spatial analysis in QGIS, and make and export maps. The tools/functions that are introduced in this workshop are:
+This is a workshop regarding Introduction to QGIS. The workshop helps learns be familiar with the layout of QGIS, be able to do simple raster analysis in QGIS, and make and export maps. The tools/functions that are introduced in this workshop are:
 
 * projection
 * Create buffer
@@ -9,6 +9,13 @@ This is a workshop regarding Introduction to QGIS. The workshop helps learns be 
 * Join attribute tables by commom field
 * Select features by attributes
 * Create print layout and export maps
+
+o	Clip raster
+o	Raster calculator
+o	Zonal statistics as table
+o	Join table by attributes
+o	Change symbology 
+
 
 This workshop introduces the functions to learners by conducting a House Hunting project. The project aims to help a colleage student find a suitable apartment, where the apartment is within 20 min buffer from University of California, Los Angeles (UCLA), the rent is less than $1300/month, and has at least 2 grocery stores within 400m walking distance.
 
