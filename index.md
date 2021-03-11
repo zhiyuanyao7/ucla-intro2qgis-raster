@@ -39,7 +39,7 @@ Please consult the [Data Science Center](https://www.library.ucla.edu/location/d
 > | **Introduction & Objectives** | This workshop applies some basic spatial analysis tools to find out the suitable apartments for students. The objectives of the workshops are being familiar with QGIS layout, being able to use basic spatial analysis tools (e.g. buffer), changing layers properties, and making maps.| 
 > |**Methodology**|1. Learn how to download data from census bureau<br> 2.  Clip rast <br> 3. Raster calcualtor<br> 4. Zonal statistics as table<br>5. Join table by attributes tables<br>6. Change symbology  <br> 7. Create a print layout and make maps|
 > |**Expected results**| Maps are saved for review. For this:<br>1. Learn to save map projects, and create, export, and save map print layouts.<br> 2. Add item contents (i.e. maps, text box, legend, north arrow, and scale bars) to compose a print layout, and modify item properties.|
-> |**Analysis & Discussion**|TThe definition of green space, the resolution of raster data, and the symbology to visualize the map all affect the result. |
+> |**Analysis & Discussion**|The definition of green space, the resolution of raster data, and the symbology to visualize the map all affect the result. |
 > |**Conclusion**|Thank you for attending the workshop. After reviewing the map, which area has the highest percentage of green space??|
 {: .checklist} 
 
