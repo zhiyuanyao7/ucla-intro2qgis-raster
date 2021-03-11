@@ -3,23 +3,13 @@
 ## Overview
 This is a workshop regarding Introduction to QGIS. The workshop helps learns be familiar with the layout of QGIS, be able to do simple raster analysis in QGIS, and make and export maps. The tools/functions that are introduced in this workshop are:
 
-* projection
-* Create buffer
-* Count points within buffers
-* Join attribute tables by commom field
-* Select features by attributes
-* Create print layout and export maps
+*	Clip raster
+*	Raster calculator
+*	Zonal statistics as table
+* Join table by attributes
+* Change symbology 
 
-o	Clip raster
-o	Raster calculator
-o	Zonal statistics as table
-o	Join table by attributes
-o	Change symbology 
-
-
-This workshop introduces the functions to learners by conducting a House Hunting project. The project aims to help a colleage student find a suitable apartment, where the apartment is within 20 min buffer from University of California, Los Angeles (UCLA), the rent is less than $1300/month, and has at least 2 grocery stores within 400m walking distance.
-
-After selection, the project asks to make a map to show the student where the suitable apartments are. The final results of this project will be a map showing the selected apartments together with the surrounded grocery stores and a street base map.
+Green space helps stabilize both micro- and macro-climates and provides outdoor space for dweller to participate physical activity, engage with nature, and socialize with people. According to EPA, Land cover that is considered green space includes all land that is vegetated; it excludes barren land, water, and impervious surfaces. This workshop applies some basic spatial analysis and raster analysis tools to calculate the percentage of green space for each census tract in Los Angeles County and make a map to show the result.
 
 ## Code of Conduct
 
