@@ -6,7 +6,7 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 
 {% include gh_variables.html %}
 ## Welcome to the QGIS workshop
-QGIS Quantum Geographic Information Systems (QGIS) is a user-friendly open source Geographic Information System (GIS) licensed under the GNU General Public License. This workshop exhibits a small portion of the many spatial analysis techniques QGIS offers to familiarize you with some of the basics, and to illustrate the fundamentals of GIS. In this workshop for beginners, we will locate apartments that are within 20 min distance by public transit, analyze the price of the apartments and count nearby grocery within a fixed buffer distance.
+QGIS Quantum Geographic Information Systems (QGIS) is a user-friendly open source Geographic Information System (GIS) licensed under the GNU General Public License. This workshop exhibits a small portion of the many spatial analysis techniques QGIS offers to familiarize you with some of the basics, and to illustrate the fundamentals of GIS. In this workshop for beginners, we will applies some basic spatial analysis and raster analysis tools to calculate the percentage of green space for each census tract in Los Angeles County and make a map to show the result.
 
 ## Pre Workshop Survey
 To get a better backgroud of the participantes and prepare for the workshop, we would like to get some information from you. 
