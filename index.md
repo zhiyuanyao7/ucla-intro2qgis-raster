@@ -49,9 +49,9 @@ Please consult the [Data Science Center](https://www.library.ucla.edu/location/d
 >
 > | Dataset | Format | Date | Resource | Description |
 > | ---- | ------| ------ |  ---- |  ----|
-> | Los Angeles County census tract [Download](./data/GroceryStore_sp.zip) | Shapefile | 2016 | [TIGER/Line Shapefile](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html) | The census tract in Los Angeles County.|
-> | Los Angeles County boundary [Download](./data/Neighborhood_sp.zip) |  Shapefile | 2016| [TIGER/Line Shapefile](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html) |The administrative boundary of Los Angeles County.|
-> | National land cover data [Download](./data/Apartments.csv) | raster | 2016 |[National land cover data](https://www.mrlc.gov/data)| The National Land Cover Database (NLCD) provides nationwide data on land cover and land cover change at a 30m resolution with a 16-class legend based on a modified Anderson Level II classification system.| 
+> | Los Angeles County census tract [Download](./data/la_tract_nad.zip) | Shapefile | 2016 | [TIGER/Line Shapefile](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html) | The census tract in Los Angeles County.|
+> | Los Angeles County boundary [Download](./data/la_boundary_nad.zip) |  Shapefile | 2016| [TIGER/Line Shapefile](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html) |The administrative boundary of Los Angeles County.|
+> | National land cover data [Download](https://drive.google.com/file/d/1roJ9GNNZiqt3Vr38J3ypEoAij9-HApv1/view?usp=sharing) | raster | 2016 |[National land cover data](https://www.mrlc.gov/data)| The National Land Cover Database (NLCD) provides nationwide data on land cover and land cover change at a 30m resolution with a 16-class legend based on a modified Anderson Level II classification system.| 
 {: .callout} 
 
 ## Post Workshop Survey
