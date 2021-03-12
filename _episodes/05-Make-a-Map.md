@@ -58,7 +58,7 @@ Data frame, legend, north arrow, and scale are required elements of a map. Thoug
 
 ![The final map](../fig/fig51-the-final-map.png)
 
-![Export the map](../fig/fig51-export-the-map.png)
+![Export the map](../fig/fig52-export-the-map.png)
 
 {% include links.md %}
 
