@@ -47,7 +47,6 @@ Using GIS to assist analyzing geospatial data, we need to implement the tool thr
 [QGIS](https://www.qgis.org/en/site/) is a free and open-source cross-platform desktop geographic information system application that supports viewing, editing, and analysis of geospatial data (Figure 3. QGIS). QGIS upgrades constantly due to dynamic community. QGIS can run in both Wins and Mac. You can refer to [QGIS download page](https://qgis.org/en/site/forusers/download.html) to download the latest version of GIS. 
 
 ![QGIS](../fig/fig3-qgis.png)
-
 {: .text-center}
 
 {% include links.md %}
