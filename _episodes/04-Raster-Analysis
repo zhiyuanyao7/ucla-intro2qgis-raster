@@ -1,0 +1,290 @@
+---
+title: "Raster Analysis"
+teaching: 20
+exercises: 0
+questions: 
+- "How do we clip a raster layer?"
+- "How do we do raster calculation?"
+- "How do we calculate statistics from a given raster layer?"
+- "How do we change symbology?"
+objectives:
+- "Know how to clip a raster layer using another layer."
+- "Know how to do raster calculation in QGIS."
+- "Know how to do zonal statistics to get the statistics of a raster layer."
+- "Learn how to change symbology of a layer"
+keypoints:
+- "QGIS can clip a raster layer by using an existing vector layer or by a predefined extent."
+- "The Raster Calculator tool allows you to create and execute a Map Algebra expression that will output a raster."
+- "A zonal statistics operation is one that calculates statistics on cell values of a raster (a value raster) within the zones defined by another dataset."
+---
+
+## Raster Analysis
+
+We add all the data for the workshop. In the following, we will clip the raster to the Los Angeles extent, do raster calculations, extract the green space coverage statistics, and join the statistics to the added vector layer, **la_tract_nad.shp**. 
+
+## Clip raster
+
+The added raster layer, **NLCD_2016_Land_Cover_L48_ca_sp**, covers the whole California, while we are interested in the green space in Los Angeles County. We will clip the raster layer using the mask layer of Los Angeles County. 
+
+**a.**	To clip the raster layer, go to Processing Toolbox (to open Processing Toolbox, Menu->Processing->Toolbox). In the searching bar, click Clip raster by mask layer. 
+
+![Clip raster by mask layer in Toolbox](../fig/fig15-clip-raster-by-mask-layer-in-the-toolbox.png)
+
+**b.**	In the Clip Raster by Mask Layer
+    i.	Input layer: NLCD_2016_LanD_Cover_L48_ca_sp
+    ii.	Mask layer: la_boundary_nad
+    iii.	Assign a specified nodata value to output bands: 0
+    iv.	X Resolution to output bands: 30
+    v.	Y Resolution to output bands: 30
+
+![Clip raster layer](../fig/fig16-clip-raster-layer.png)
+
+**c.**	A new layer, Clipped (mask), shows up in the Layers panel. By the right side of the layer, a label informs this is a “Temporary Layer only! Contents will be discarded after closing QGIS.” 
+
+![Clipped layer](../fig/fig17-clipped-layer.png)
+
+**d.**	As the layer will be discarded, we want to save this layer. Right click the Clipped (mask), Export, and Save as. 
+
+![Save the clipped layer](../fig/fig18-save-the-clipped-layer.png)
+
+**e.**	Name the layer as ncld_la. Select the CRS as **EPSG: 2229 – NAD83 / California zone 5 (ftUS)**. Click OK.
+
+![Export the clipped layer](../fig/fig19-export-the-clipped-layer.png)
+
+**f.**	The saved raster layer shows up in the Layer panel. The colors of the layer change as the Symbology changes. 
+
+![The saved raster layer](../fig/fig20-the-saved-raster-layer.png)
+
+**g.**	Right click the ncld_la layer and click Properties. 
+
+![Layer properties](../fig/fig21-layer-properties.png)
+
+**h.**	In the new window, choose Symbology. Let’s change the symbology of the layer
+    i.	Render type: Paletted/Unique values
+    ii.	Classify 
+    iii.	OK.
+
+![Layer symbology (1)](../fig/fig22-layer-symbology-1.png)
+
+![Layer symbology (2)](../fig/fig23-layer-symboloy-2.png)
+
+## Raster calculator
+
+Raster data consists of grids and the attribute value associate with each grid. Raster calculator does the math-like operations with the attribute values of the grids. In this session, we will classify the green space and non-green space for **ncld_la layer**. The **ncld_la layer**, same as the NCLD 2016 data, has 20 types of land cover, among which 11 Open Water, 12 Perennial Ice/Snow, 23 Developed Medium Density, 24 Developed High Density, and 31 Barren Land are non-green space. We will apply Raster Calculator to assign a new value (1) to green space and another new value (0) to the non-green space. 	
+
+**a.**	In the Processing Toolbox, type raster calculator in the searching bar. Choose Raster Calculator under Raster Analysis. 
+
+![Raster calculator in Processing Toolbox](../fig/fig24-raster-calculator-in-processing-toolbox.png)
+
+**b.**	In the Raster Calculator window. Expression:
+        ("ncld_la@1"  != 11 AND R "ncld_la@1"  != 12 AND ncld_la@1"  !=  23  AND "ncld_la@1"  !=  24  AND  "ncld_la@1"  !=  31 )  * 1
+   
+This expression means if the attribute values of grids are not 11, 12, 23, 24, or 31, we will assign 1 to these grids and assign 0 to the rest of the grids. After the calculator, we will have 2 attribute values (0 and 1) for the grids, 0 representing the non-green space area, while 1 representing the green space area. 
+
+![Raster calculator (1)](../fig/fig25-rastor-calculator-1.png)
+
+**c.**	Cell size: 30. Output extent: click Calculate from Layer->la_boundary_nad. We want the output extent the same as the Los Angeles County. 
+
+![Output extent in Raster Calculator](../fig/fig26-output-extent-in-raster-calculator.png)
+
+**d.**	Output CRS:  Click the button to open Coordinate Reference System Selector. In the searching bar, type in 2229 and select the **NAD 83/ California zone 5 (ftUS)**. 
+
+![Raster calculator (2)](../fig/fig27-raster-calculatro-2.png)
+
+**e.**	The output layer after Raster Calculator is also a Temporal Layer. We export and Save it as **ncld_la_greenspace.tiff**. 
+
+![Export the layer](../fig/fig28-export-the-extent.png)
+
+![Save the layer](../fig/fig29-save-the-layer.png)
+
+**f.**	The saved layer will show up in the Layer Panel. 
+
+![The calculated layer in the Layer Panel](../fig/fig30-the-calculated-layer-in-layer-panel.png)
+
+## Zonal statistics
+
+We classified the land cover data into two categories: green space and non-green space. In the ncld_la_greenspace layer, the green space grids have the value 1, while the non-green space have the value 0. As we intend to investigate the coverage of green space in each census tract, we will do zonal statistics to summarize the statistics (e.g., sum, count, mean) of the land cover layer (ncld_la_greenspace) within the census tract layer (la_tract_nad.shp). 
+
+**a.**	Go to the Processing Toolbox and type zonal statistics in the searching bar. Select Zonal Statistics. 
+
+![Zonal statistics in the Processing Toolbox](../fig/fig31-zonal-statistics-in-the-processing-toolbox.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**1.** The main area of QGIS is called the canvas. There are also panels and toolbars, a status bar and menu panels. 
+
+**2.** Panels and toolbars may be moved around and docked at different locations (left-click and
+hold to initiate this flexibility).  If you drop a panel on top of another, they will be nested into tabs. Panels you do not used can be removed. Toolbars can be moved around in much the same way, but you cannot nest toolbars into tabs. By right-clicking in the toolbar area, you may get a list of available panels and toolbars you can turn them on and off as you like.
+
+**3.** Through the menu, you can access almost everything in QGIS; some functions have buttons, 
+and keyboard shortcuts as well.
+
+**4.** The status bar shows relevant information about the current tool or aspects of the map canvas, like coordinates and scale.
+
+**5.** Toolbox is where you can search for all the tools provided in QGIS. If you can see the toolbox as the figure shows, you can open it in the menu (Processing->Toolbox).
+
+![QGIS Layout](../fig/Figure7-QGIS-layout.png)
+
+QGIS Layout
+{: .text-center}
+
+**6.** Use the map navigation toolbar to help navigate your map in the canvas. Here you can find tools to pan and zoom the map, zoom to selected features, and view the complete extent of the map or selected layer. You can also jump to a previous extent with dedicated buttons.  
+
+![QGIS Toolbar](../fig/Figure8-QGIS-tool-bar.png)
+
+QGIS Toolbar
+{: .text-center}
+
+## Add data to QGIS
+
+To start, we need to download the data first. There are two shapefiles: Grocery stores [Download](./data/GroceryStore_sp.zip), and Neighborhood boundary [Download](./data/Neighborhood_sp.zip), and a csv file: Apartments [Download](./data/Apartments.csv). The Apartments are thoes which are within 20 min buffer to UCLA by public transit and whose price are less than $1700/month. 
+
+### Add vector data 
+
+**1.**  Left-click the "Layer" menu option, hover over "Add Layer," and left-click the "Add Vector Layer" option. 
+
+![Add a vector layer](../fig/Figure9-Add-a-vector-layer.png)
+
+Add a vector layer
+{: .text-center}
+
+**2.**  In Data Source Manager window, click the button and navigate to the folder where the data is. Once select GroceryStores_sp.shp, click Add. 
+
+![Add Grocery store layer](../fig/Figure10-Add-GroceryStores_sp-layer.png)
+
+Add Grocery store layer
+{: .text-center}
+
+**3.**  Follow the same procedure and Add Neighborhood_sp.shp.
+
+![Add Neighborhood layer](../fig/Figure11-Add-Neighborhood_sp-layer.png)
+
+Add Neighborhood layer
+{: .text-center}
+
+**4.**  After adding GroceryStores_sp.shp and Neighborhood_sp.shp, close the Data Source Manager window.
+
+### Add delimited file
+
+QGIS can convert X Y Coordinates into locations on a map. Open Apartments.csv and you can see X_Coor and Y_Coor columns. These are geospatial information for these apartments. We can map X_Coor and Y_Coor as a point layer in QGIS.
+
+**1.**  In the menu bar, click Layer, then Add layer, and choose Add Delimited Text Layer.
+
+![Add delimited file](../fig/Figure12-Add-delimited-text-layer.png)
+
+Add delimited file
+{: .text-center}
+
+**2.**  In the Data Source Manager window
+        (1) navigate to the Data folder
+        (2) choose Apartment.csv. 
+        (3) Make sure Geometry CRS is EPSG: 4326 - WGS84. 
+        (4) Click Add. 
+        Close the Data Source Managerwindow. Apartments should show in the Canvas. 
+
+![Add Apartments layer](../fig/Figure13-Add-Apartments-layer.png)
+
+Add Apartments layer
+{: .text-center}
+
+**3.**  The Canvas looks like the following. There are two points layers (Apartments, and GroceryStore_sp), and one polygon layer (Neighborhood_sp).
+
+![Layout after adding layers](../fig/Figure14-Layout-after-adding-layers.png)
+
+Layout after adding layers
+{: .text-center}
+
+## Add a basemap
+
+QGIS provides access to a variety of online base maps. You can add these base maps by building [XYZ Tiles connections](https://www.spatialbias.com/2018/02/qgis-3.0-xyz-tile-layers/). Here we add Google Road/Streets as the base map for the project. 
+
+**1.**  Find XYZ Tiles in Brower. Right click XYZ Tiles. 
+
+![Add a new connection of XYZ Tile](../fig/Figure15-Add-a-new-connection-for-XYZ-Tiles.png)
+
+Add a new connection of XYZ Tile
+{: .text-center}
+
+**2.**  In the XYZ Connection window, name the new XYZ Tile as Google Road/Streets, and copy  https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z} into URL. Click OK. 
+
+![Add Google Streets as the basemap](../fig/Figure16-Add-Google-Streets-as-the-basemap.png)
+
+Add Google Streets as the basemap
+{: .text-center}
+
+**3.**  Drag Google Road into the Canvas and move Google Road layer to the bottom in Layers Panel. 
+
+![Drag Google Streets to the Canvas](../fig/Figure17-Drag-Google-Streets-to-the-Canvas.png)
+
+Drag Google Streets to the Canvas
+{: .text-center}
+
+## Add a plugin 
+
+As an open source software, QGIS have an active community constantly contributing to a variety of tools by developing QGIS plugins. We will use a MMQGIS plugin in this project. 
+
+**1.**  To add a plugin, go to Menu, and click Plugins. Then click Manage and Install Plugins.
+
+![Manage and install plugins](../fig/Figure26-Manage-and-install-plugins.png)
+
+Manage and install plugins
+{: .text-center}
+
+**2.**  In the Plugins window, search for **MMQGIS**. Click the mmqgis and then Install Plugin. 
+
+![MMQGIS plugin](../fig/Figure27-MMQGIS-plugin.png)
+
+MMQGIS plugin
+{: .text-center}
+
+**3.**  After installation, check the box in front of **mmqgis**. 
+
+![Check mmqgis plugin](../fig/Figure28-Check-mmqgis-plugin.png)
+
+Check mmqgis plugin
+{: .text-center}
+
+**4.**  With successful installation, you should see the MMQGIS in the Menu bar. 
+
+![Open MMQGIS in the Menu bar](../fig/Figure29-Open-MMQGIS-in-the-Menu-bar.png)
+
+Check mmqgis plugin
+{: .text-center}
+
+{% include links.md %}
