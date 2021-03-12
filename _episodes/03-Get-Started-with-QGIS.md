@@ -31,7 +31,7 @@ QGIS layout
 
 Use the map navigation toolbar to help navigate your map in the canvas. Here you can find tools to pan and zoom the map, zoom to selected features, and view the complete extent of the map or selected layer. You can also jump to a previous extent with dedicated buttons.  
 
-![QGIS toolbar](../fig/fig5-qgis-toolbar.png)
+![QGIS toolbar](../fig/fig5-qis-toolbar.png)
 
 QGIS toolbar
 {: .text-center}
@@ -74,7 +74,7 @@ Next step is to add vector data to QGIS. We have two vector layers: **la_boundar
 
 **a.**	Click Layer->Add Layer->Add Vector Layer 
 
-![Add vector data from Menu](../fig/fig10-add-vector-data-from-menu.png)
+![Add vector layer from Menu](../fig/fig10-add-vector-layer-from-menu.png)
 
 Add vector data from Menu
 {: .text-center}
