@@ -1,3 +1,8 @@
+
+---
+title: "Reference"
+---
+
 ## Reference
 
 Stock, K., & Guesgen, H. (2016). Geospatial reasoning with open data. In Automating Open-Source Intelligence (pp. 171-204). Syngress. 
