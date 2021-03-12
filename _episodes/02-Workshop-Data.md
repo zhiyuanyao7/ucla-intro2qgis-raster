@@ -34,8 +34,8 @@ There are two main types of conceptualizations for digital geospatial data: the 
 ### National Land Cover Database (NLCD)
 [NLCD 2016](https://www.mrlc.gov/national-land-cover-database-nlcd-2016) is an ongoing land cover modeling production effort with NLCD scientists providing expertise in research and development, modeling, scripting, scene selection, cloud-masking, land cover mapping, and imperviousness mapping production. NCLD 2016 classified the land cover into 20 types (Table 2. NLCD legend), and the land cover dataset have a resolution of 30m by 30m. 
 
-![National land cover legend](../fig/fig4-national-land-cover-legend-1.png)
-![National land cover legend 2016](../fig/fig4-national-land-cover-legend-2.png)
+![National land cover legend](../fig/fig4-1-national-land-cover-legend-1.png)
+![National land cover legend 2016](../fig/fig4-1-national-land-cover-legend-2.png)
 
 National land cover legend (2016)
 {: .text-center}
