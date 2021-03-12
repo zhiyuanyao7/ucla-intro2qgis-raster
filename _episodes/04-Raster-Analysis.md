@@ -143,7 +143,7 @@ Save the layer
 
 **f.**	The saved layer will show up in the Layer Panel. 
 
-![The calculated layer in the Layer Panel](../fig/fig30-the-calculated-layer-in-layer-panel.png)
+![The calculated layer in the Layer Panel](../fig/fig30-the-calculated-layer-in-the-layer-panel.png)
 
 The calculated layer in the Layer Panel
 {: .text-center}
@@ -192,7 +192,7 @@ The attribute table
 
 **f.**	The numbers in “_count” column are the count of grids in each census tract. The values in the “_sum” column are the sum of grids of green space as the values of grids of green space is 1 and values of grids of non-green space is 0. The “_mean” column shows the mean of grids of green space.  
 
-![The columns in the attribute table](../fig/fig36-the-colulmns-in-the-attribute-table.png)
+![The columns in the attribute table](../fig/fig36-the-columns-in-the-attribute-table.png)
 
 The columns in the attribute table
 {: .text-center}
@@ -216,7 +216,7 @@ Layer properties
 	    Output field: **length 10**; **Precision: 6** 
 	    Expression: **“_sum”*30*30*0.3048*0.3048**
         
-![Add and calculate a new column: Area](../fig/fig38-add-and-calculate-a-new-column-area.png)
+![Add and calculate a new column: Area](../fig/fig38-add-and-caculate-a-new-column-area.png)
 
 Add and calculate a new column: Area
 {: .text-center}
@@ -241,7 +241,7 @@ Area and greenspace columns
 
 **e.**	 Click the “pencil” button and save the editing.
 
-![Save edits](../fig/fig40-save-edits.png)
+![Save edits](../fig/fig41-save-edits.png)
 
 Save edits
 {: .text-center}
