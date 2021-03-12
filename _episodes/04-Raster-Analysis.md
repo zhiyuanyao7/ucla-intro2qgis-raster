@@ -90,7 +90,7 @@ Layer properties
 Layer symbology (1)
 {: .text-center}
 
-![Layer symbology (2)](../fig/fig23-layer-symboloy-2.png)
+![Layer symbology (2)](../fig/fig23-layer-symbology-2.png)
 
 Layer symbology (2)
 {: .text-center}
@@ -111,7 +111,7 @@ Raster calculator in Processin Toolbox
    
 This expression means if the attribute values of grids are not 11, 12, 23, 24, or 31, we will assign 1 to these grids and assign 0 to the rest of the grids. After the calculator, we will have 2 attribute values (0 and 1) for the grids, 0 representing the non-green space area, while 1 representing the green space area. 
 
-![Raster calculator (1)](../fig/fig25-rastor-calculator-1.png)
+![Raster calculator (1)](../fig/fig25-raster-calculator-1.png)
 
 Raster Calculator (1)
 {: .text-center}
@@ -124,7 +124,7 @@ Output extent in Raster Calculator
 
 **d.**	Output CRS:  Click the button to open Coordinate Reference System Selector. In the searching bar, type in 2229 and select the **NAD 83/ California zone 5 (ftUS)**. 
 
-![Raster calculator (2)](../fig/fig27-raster-calculatro-2.png)
+![Raster calculator (2)](../fig/fig27-raster-calculator-2.png)
 
 Raster Calculator (2)
 {: .text-center}
