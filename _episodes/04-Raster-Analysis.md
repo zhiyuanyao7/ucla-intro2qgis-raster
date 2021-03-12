@@ -131,7 +131,7 @@ Raster Calculator (2)
 
 **e.**	The output layer after Raster Calculator is also a Temporal Layer. We export and Save it as **ncld_la_greenspace.tiff**. 
 
-![Export the layer](../fig/fig28-export-the-extent.png)
+![Export the layer](../fig/fig28-export-the-layer.png)
 
 Export the layer
 {: .text-center}
