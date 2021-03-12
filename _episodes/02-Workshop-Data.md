@@ -34,8 +34,11 @@ There are two main types of conceptualizations for digital geospatial data: the 
 ### National Land Cover Database (NLCD)
 [NLCD 2016](https://www.mrlc.gov/national-land-cover-database-nlcd-2016) is an ongoing land cover modeling production effort with NLCD scientists providing expertise in research and development, modeling, scripting, scene selection, cloud-masking, land cover mapping, and imperviousness mapping production. NCLD 2016 classified the land cover into 20 types (Table 2. NLCD legend), and the land cover dataset have a resolution of 30m by 30m. 
 
-!(../fig/fig4-national-land-cover-legend-1)
-![National land cover legend 2016](../fig/fig4-national-land-cover-legend-2)
+![National land cover legend](../fig/fig4-national-land-cover-legend-1.png)
+![National land cover legend 2016](../fig/fig4-national-land-cover-legend-2.png)
+
+National land cover legend (2016)
+{: .text-center}
 
 Environmental Protection Agency (EPA) defines the green space as all vegetated land, including agriculture, lawns, forests, wetlands, and gardens. Barren land and impervious surfaces such as concrete and asphalt are excluded. We exclude the 11 Open Water, 12 Perennial Ice/Snow, 23 Developed Medium Density, 24 Developed High Density, and 31 Barren Land and treat the rest of land cover as green space. In the later part, we will apply Raster calculator to filter out the green space. 
 
