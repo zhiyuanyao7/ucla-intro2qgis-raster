@@ -34,19 +34,19 @@ Data frame, legend, north arrow, and scale are required elements of a map. Thoug
 ![Add map elements](../fig/fig46-add-map-elements.png)
 
 **a.**	Change the properties of title 
-    i.	Click the title
-    ii.	Change the name of the title in the Item Properties tab
-    iii.	Click the Font
-    iv.	Change the size of title into 24 (you may select a different size to fit your map)
-    v.	Click OK
+   - i.	Click the title
+   - ii.	Change the name of the title in the Item Properties tab
+   - iii.	Click the Font
+   - iv.	Change the size of title into 24 (you may select a different size to fit your map)
+   - v.	Click OK
     
 ![Change title properties](../fig/fig47-change-title-properties.png)
 
 **b.**	Change the properties of legend
-    i.	Uncheck Resize to fit contents
-    ii.	Uncheck Auto update
-    iii.	Delete **ncla_nad**, **la_boundary_nad**, and **NLCD_2016_Land_Cover_L48_ca_sp** layers
-    iv.	Change the name of the layer in legend (Figure 46 and Figure 47)
+  - i.	Uncheck Resize to fit contents
+  - ii.	Uncheck Auto update
+  - iii.	Delete **ncla_nad**, **la_boundary_nad**, and **NLCD_2016_Land_Cover_L48_ca_sp** layers
+  - iv.	Change the name of the layer in legend (Figure 46 and Figure 47)
 
 ![Chnage the Legend properties](../fig/fig48-change-the-legend-properties.png)
 
