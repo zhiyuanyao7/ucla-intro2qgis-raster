@@ -34,11 +34,11 @@ Clip raster by mask layer in Toolbox
 {: .text-center}
 
 **b.**	In the Clip Raster by Mask Layer
-    i.	Input layer: NLCD_2016_LanD_Cover_L48_ca_sp
-    ii.	Mask layer: la_boundary_nad
-    iii.	Assign a specified nodata value to output bands: 0
-    iv.	X Resolution to output bands: 30
-    v.	Y Resolution to output bands: 30
+   - i.	Input layer: NLCD_2016_LanD_Cover_L48_ca_sp
+   - ii.	Mask layer: la_boundary_nad
+   - iii.	Assign a specified nodata value to output bands: 0
+   - iv.	X Resolution to output bands: 30
+   - v.	Y Resolution to output bands: 30
 
 ![Clip raster layer](../fig/fig16-clip-raster-layer.png)
 
@@ -81,9 +81,9 @@ Layer properties
 {: .text-center}
 
 **h.**	In the new window, choose Symbology. Let’s change the symbology of the layer
-    i.	Render type: Paletted/Unique values
-    ii.	Classify 
-    iii.	OK.
+   - i.	Render type: Paletted/Unique values
+   - ii.	Classify 
+   - iii.	OK.
 
 ![Layer symbology (1)](../fig/fig22-layer-symbology-1.png)
 
@@ -160,9 +160,9 @@ Zonal statistics in the Processing Toolbox
 {: .text-center}
 
 **b.**	In the Zonal Statistics window:
-        i.	Raster layer: **ncld_la_greenspace [EPSG: 2229]**
-        ii.	Vector layer containing zones: **la_tract_nad [EPSG: 2229]**
-        iii.	Statistics to calculate: click the button to specify the statistics to summarize
+       - i.	Raster layer: **ncld_la_greenspace [EPSG: 2229]**
+       - ii.	Vector layer containing zones: **la_tract_nad [EPSG: 2229]**
+       - iii.	Statistics to calculate: click the button to specify the statistics to summarize
         
 ![Zonal statistics (1)](../fig/fig32-zonal-statistics-1.png)
 
@@ -259,9 +259,9 @@ Open Properties
 
 **b.**	In the Layer Properties window, select Symbology from the left panel. 
 **c.**	At the top of the right panel, select Graduated. 
-        i.	Value: **greenspace**
-        ii.	Color ramp: **green ramp**
-        iii. Mode: **Natural Breaks (Jenks)**
+       - i.	Value: **greenspace**
+       - ii.	Color ramp: **green ramp**
+       - iii. Mode: **Natural Breaks (Jenks)**
 **d.**	Click Classify. 
 
 To classify the “greenspace” attribute, we select Natural Breaks (Jenks). This method makes the variance within each class minimized and the variance between classes maximized. QGIS also offers other methods of classification. You can choose other methods accordingly depending on what perspective you want to emphasize. 
