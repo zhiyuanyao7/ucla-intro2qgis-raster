@@ -199,7 +199,7 @@ The columns in the attribute table
 
 ## Calcualte the area and percentage of green space in census tract
 
-In the above sections, we summarize the grids of green space. As the values of green space is 1 and the values of non-green space is 0. The sum of the grids is the total number of grids of green space. NLCD 2016 dataset’s resolution is 30m by 30m, and as a result the area of the green space can be calculated as **_sum*30m*30m**.  
+In the above sections, we summarize the grids of green space. As the values of green space is 1 and the values of non-green space is 0. The sum of the grids is the total number of grids of green space. NLCD 2016 dataset’s resolution is 30m by 30m, and as a result the area of the green space can be calculated as **_sum\*30m\*30m**.  
 
 As you noticed, there is a “Shape_Area” column in the attribute table. “Shape_Area” is the area of each census tract. What is the unit of the “Shape-Area”? We can find the information in the Properties of the layer, **la_tract_nad**. 
 
@@ -210,11 +210,11 @@ As you noticed, there is a “Shape_Area” column in the attribute table. “Sh
 Layer properties
 {: .text-center}
 
-**b.**	To make the unit consistent for the “Area” (the new created column) and the “Shape_Area”, we need to convert the unit when we calculate the “Area” of green space. The Area will be calculated as _sum*30*30*0.3048*0.3048 (1 meter = 0.3048 feet). The configurations are as the following:
+**b.**	To make the unit consistent for the “Area” (the new created column) and the “Shape_Area”, we need to convert the unit when we calculate the “Area” of green space. The Area will be calculated as _sum \* 30 \* 30 \* 0.3048 * 0.3048 (1 meter = 0.3048 feet). The configurations are as the following:
         Output field name: **Area**
 	    Output field type: **Decimal number (real)**
 	    Output field: **length 10**; **Precision: 6** 
-	    Expression: **“_sum”*30*30*0.3048*0.3048**
+	    Expression: **“_sum”\*30\*30\*0.3048\*0.3048**
         
 ![Add and calculate a new column: Area](../fig/fig38-add-and-caculate-a-new-column-area.png)
 
