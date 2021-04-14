@@ -108,7 +108,7 @@ Raster calculator in Processin Toolbox
 
 **b.**	In the Raster Calculator window. Expression:
 
-         ( "nlcd_la@1" != 110 AND "nlcd_la@1" != 120 AND "nlcd_la@1" != 23  AND  "nlcd_la@1" !=  24 AND "nlcd_la@1" != 31 )  * 1
+         ( "nlcd_la@1" != 11 AND "nlcd_la@1" != 12 AND "nlcd_la@1" != 23  AND  "nlcd_la@1" !=  24 AND "nlcd_la@1" != 31 )  * 1
    
 This expression means if the attribute values of grids are not 11, 12, 23, 24, or 31, we will assign 1 to these grids and assign 0 to the rest of the grids. After the calculator, we will have 2 attribute values (0 and 1) for the grids, 0 representing the non-green space area, while 1 representing the green space area. 
 
