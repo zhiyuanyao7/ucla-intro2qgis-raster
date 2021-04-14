@@ -213,7 +213,7 @@ The columns in the attribute table
 In the above sections, we summarize the grids of green space. As the values of green space is 1 and the values of non-green space is 0. The sum of the grids is the total number of grids of green space. NLCD 2016 dataset’s resolution is 98.245 feet by 98.245 feet (you can find the information from NLCD data's properties), and as a result the area of the green space can be calculated as **_sum\*98.245 feet\*98.245 feet**.  
 
 ![raster resoluction1](../fig/fig57-raster-resolution1.png)
-![raster resoluction2](../fig/fig57-raster-resolution2.png)
+![raster resoluction2](../fig/fig58-raster-resolution2.png)
 
 National Land Cover Dataset resolution (98.425 feet by 98.425 feet)
 {: .text-center}
