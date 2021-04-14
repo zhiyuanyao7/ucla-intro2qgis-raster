@@ -116,21 +116,29 @@ This expression means if the attribute values of grids are not 11, 12, 23, 24, o
 
 Raster Calculator (1)
 {: .text-center}
-**c.**	Cell size: 30. Output extent: click Calculate from Layer->la_boundary_nad. We want the output extent the same as the Los Angeles County. 
+**c.**	Reference layer(s) (used for automated extent, cellsize, and CRS)[option]
+  Choose ncla_la as the reference layer. 
+  ![Choose the reference layer](.../fig/fig53-reference-layer.png)
+  ![Choose the reference layer]((.../fig/fig54-reference-layer1.png)
+  
+  Choose the reference layer 
+  {: .text-center}
+
+**d.** Output extent: click Calculate from Layer->la_boundary_nad. We want the output extent the same as the Los Angeles County. 
 
 ![Output extent in Raster Calculator](../fig/fig26-output-extent-in-raster-calculator.png)
 
 Output extent in Raster Calculator
 {: .text-center}
 
-**d.**	Output CRS:  Click the button to open Coordinate Reference System Selector. In the searching bar, type in 2229 and select the **NAD 83/ California zone 5 (ftUS)**. 
+**e.**	Output CRS:  Click the button to open Coordinate Reference System Selector. In the searching bar, type in 2229 and select the **NAD 83/ California zone 5 (ftUS)**. 
 
 ![Raster calculator (2)](../fig/fig27-raster-calculator-2.png)
 
 Raster Calculator (2)
 {: .text-center}
 
-**e.**	The output layer after Raster Calculator is also a Temporal Layer. We export and Save it as **ncld_la_greenspace.tiff**. 
+**f.**	The output layer after Raster Calculator is also a Temporal Layer. We export and Save it as **ncld_la_greenspace.tiff**. 
 
 ![Export the layer](../fig/fig28-export-the-layer.png)
 
@@ -142,7 +150,7 @@ Export the layer
 Save the layer
 {: .text-center}
 
-**f.**	The saved layer will show up in the Layer Panel. 
+**g.**	The saved layer will show up in the Layer Panel. 
 
 ![The calculated layer in the Layer Panel](../fig/fig30-the-calculated-layer-in-the-layer-panel.png)
 
