@@ -210,11 +210,11 @@ As you noticed, there is a “Shape_Area” column in the attribute table. “Sh
 Layer properties
 {: .text-center}
 
-**b.**	To make the unit consistent for the “Area” (the new created column) and the “Shape_Area”, we need to convert the unit when we calculate the “Area” of green space. The Area will be calculated as _sum \* 30 \* 30 \* 0.3048 * 0.3048 (1 meter = 0.3048 feet). The configurations are as the following:
+**b.**	To make the unit consistent for the “Area” (the new created column) and the “Shape_Area”, we need to convert the unit when we calculate the “Area” of green space. The Area will be calculated as _sum \* 98.425 \* 98.425 (feet). The configurations are as the following:
         Output field name: **Area**
 	    Output field type: **Decimal number (real)**
 	    Output field: **length 10**; **Precision: 6** 
-	    Expression: **“_sum”\*30\*30\*0.3048\*0.3048**
+	    Expression: **“_sum”\*98.425\*98.425**
         
 ![Add and calculate a new column: Area](../fig/fig38-add-and-caculate-a-new-column-area.png)
 
