@@ -40,7 +40,7 @@ Clip raster by mask layer in Toolbox
    - iv.	X Resolution to output bands: Not set
    - v.	Y Resolution to output bands: Not set
 
-![Clip raster layer](../fig/fig16-clip-raster-layer.png)
+![Clip raster layer](../fig/fig56-clip-raster-layer.png)
 
 Clip raster layer
 {: .text-center}
