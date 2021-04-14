@@ -37,8 +37,8 @@ Clip raster by mask layer in Toolbox
    - i.	Input layer: NLCD_2016_LanD_Cover_L48_ca_sp
    - ii.	Mask layer: la_boundary_nad
    - iii.	Assign a specified nodata value to output bands: 0
-   - iv.	X Resolution to output bands: 30
-   - v.	Y Resolution to output bands: 30
+   - iv.	X Resolution to output bands: Not set
+   - v.	Y Resolution to output bands: Not set
 
 ![Clip raster layer](../fig/fig16-clip-raster-layer.png)
 
@@ -210,7 +210,7 @@ The columns in the attribute table
 
 ## Calcualte the area and percentage of green space in census tract
 
-In the above sections, we summarize the grids of green space. As the values of green space is 1 and the values of non-green space is 0. The sum of the grids is the total number of grids of green space. NLCD 2016 dataset’s resolution is 30m by 30m, and as a result the area of the green space can be calculated as **_sum\*30m\*30m**.  
+In the above sections, we summarize the grids of green space. As the values of green space is 1 and the values of non-green space is 0. The sum of the grids is the total number of grids of green space. NLCD 2016 dataset’s resolution is 98.245 feet by 98.245 feet, and as a result the area of the green space can be calculated as **_sum\*98.245 feet\*98.245 feet**.  
 
 As you noticed, there is a “Shape_Area” column in the attribute table. “Shape_Area” is the area of each census tract. What is the unit of the “Shape-Area”? We can find the information in the Properties of the layer, **la_tract_nad**. 
 
