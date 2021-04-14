@@ -118,8 +118,9 @@ Raster Calculator (1)
 {: .text-center}
 **c.**	Reference layer(s) (used for automated extent, cellsize, and CRS)[option]
   Choose ncla_la as the reference layer. 
-  ![Choose the reference layer](.../fig/fig53-reference-layer.png)
-  ![Choose the reference layer]((.../fig/fig54-reference-layer1.png)
+  
+  ![Choose the reference layer](../fig/fig53-reference-layer.png)
+  ![Choose the reference layer]((../fig/fig54-reference-layer1.png)
   
   Choose the reference layer 
   {: .text-center}
