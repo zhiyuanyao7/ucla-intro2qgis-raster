@@ -120,7 +120,8 @@ Raster Calculator (1)
   Choose ncla_la as the reference layer. 
   
   ![Choose the reference layer](../fig/fig53-reference-layer.png)
-  ![Choose the reference layer]((../fig/fig54-reference-layer1.png)
+  
+  ![Choose the reference layer1]((../fig/fig54-reference-layer1.png)
   
   Choose the reference layer 
   {: .text-center}
