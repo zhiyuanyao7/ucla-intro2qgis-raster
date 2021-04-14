@@ -121,7 +121,7 @@ Raster Calculator (1)
   
   ![Choose the reference layer](../fig/fig53-reference-layer.png)
   
-  ![Choose the reference layer1]((../fig/fig54-reference-layer1.png)
+  ![Choose the reference layer1](../fig/fig54-reference-layer1.png)
   
   Choose the reference layer 
   {: .text-center}
